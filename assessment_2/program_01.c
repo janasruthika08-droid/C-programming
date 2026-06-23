@@ -1,3 +1,4 @@
+//Check number equal to 50
 #include<stdio.h>
 int main()
 {
@@ -11,3 +12,4 @@ int main()
     }
     return 0;
 }
+//
