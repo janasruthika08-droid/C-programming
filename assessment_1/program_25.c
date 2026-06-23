@@ -1,4 +1,4 @@
-//Program 18: Get a number from the user and subtract 5 from that number if the number is odd. Do not use if.
+//Program 25:Get a 2-digit number and print the sum of its digits.
 #include<stdio.h>
 
 int main()
@@ -8,7 +8,7 @@ int main()
     printf("Enter Number: ");
     scanf("%d",&x);
 
-    y = x - (x % 2) * 5;
+    y = (x / 10) + (x % 10);
 
     printf("Result = %d", y);
 
