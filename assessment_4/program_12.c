@@ -2,7 +2,7 @@
 
 int main()
 {
-    int x, sum = 0;
+    int x, reverse = 0;
     int digit;
 
     printf("Enter the number: ");
@@ -12,7 +12,7 @@ loop:
     if (x > 0)
     {
         digit=x%10;
-        sum+=digit;
+        reverse=(reverse*10)+digit;
         x/=10;
 
         goto loop;
