@@ -2,16 +2,14 @@
 
 int main()
 {
-    int x=1;
-    int sum=0;
+    int x=5;
 loop:
-    if(x < 6)
+    if(x >= 1)
     {
-        sum+=x;
-        x++;
+        printf("%d\n",x);
+        x--;
         goto loop;
     }
-    printf("%d\n",sum);
     return 0;
 
 }
