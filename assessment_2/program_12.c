@@ -1,4 +1,4 @@
-//Check first digit greater than or equal to zero digit
+//Check first digit less than or equal to zero digit
 #include<stdio.h>
 int main()
 {
@@ -6,8 +6,8 @@ int main()
     printf("Enter the number: ");
     scanf("%d",&x);
     y=x%10;
-    z=((x/100)%10);
-    if(z==y){
+    z=x/10;
+    if(z<=y){
         printf("1");
     }else{
         printf("0");
