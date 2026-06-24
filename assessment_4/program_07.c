@@ -2,21 +2,22 @@
 
 int main()
 {
-    int x=11;
-    int num,sum=0;
+    int x=10;
+    int tens,ones;
+
 loop:
-    if(x <= 99)
+    if(x<=99)
     {
-        num=x%2;
+        tens=x/10;
+        ones=x%10;
+        if(x%2!=0 && (tens+ones) == 7)
         {
-            if(num!=0){
-                sum+=x;
-                printf("%d ",sum);
-            }
+            printf("%d\n",x);
         }
+
         x++;
         goto loop;
     }
-    return 0;
 
+    return 0;
 }
