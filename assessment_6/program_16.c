@@ -2,34 +2,28 @@
 
 int main()
 {
-    int n, temp, first, count = 0, power = 1;
+    int n, i = 1, count = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    temp = n;
-
-    // Count digits
-    while(temp > 0)
+    while(i <= n)
     {
-        count++;
-        temp = temp / 10;
+        if(n % i == 0)
+        {
+            count++;
+        }
+        i++;
     }
 
-    for(int i = 1; i < count; i++)
+    if(count == 2)
     {
-        power = power * 10;
+        printf("Prime");
     }
-
-    first = n / power;
-
-    if(first % 2 != 0)
+    else
     {
-        first = first - 1;
-        n = (first * power) + (n % power);
+        printf("Not Prime");
     }
-
-    printf("%d", n);
 
     return 0;
 }
