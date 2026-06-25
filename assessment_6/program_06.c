@@ -2,14 +2,11 @@
 
 int main()
 {
-    int i = 11;
-    int ones,tens;
+    int i = 10;
 
-    while(i <= 99)
+    while(i < 20)
     {
-        ones=i%10;
-        tens=i/10;
-        if((i % 2 != 0) && (ones+tens==7))
+        if(i % 2 != 0)
         {
             printf("%d\n", i);
         }
