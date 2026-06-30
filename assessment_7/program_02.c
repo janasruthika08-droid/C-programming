@@ -1,11 +1,11 @@
 #include<stdio.h>
-void disp_assend(int);
+void disp_descend(int);
 int main(){
     int x;
-    disp_assend(x);
+    disp_descend(x);
     return 0;
 }
-void disp_assend(int x)
+void disp_descend(int x)
 {
     int i=5;
     while(i>=1){
