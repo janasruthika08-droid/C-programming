@@ -1,25 +1,30 @@
 #include <stdio.h>
 
-void disp_total_odd_digits(int);
+void disp_total_2digit_odd(int);
 
 int main()
 {
     int x;
 
     scanf("%d", &x);
-    disp_total_odd_digits(x);
+    disp_total_2digit_odd(x);
 
     return 0;
 }
 
-void disp_total_odd_digits(int x)
+void disp_total_2digit_odd(int x)
 {
-    int count=0,digit;
-    while(x>0){
-        digit=x%10;
-        if(digit%2 !=0 )
-        count++;
-        x/=10;
+    int count = 0, num;
+
+    while(x >= 10)
+    {
+        num = x % 100; 
+
+        if(num % 2 != 0)
+            count++;
+
+        x = x / 10;    
     }
-printf("%d",count);
+
+    printf("%d", count);
 }
